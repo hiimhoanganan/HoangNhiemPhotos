@@ -1,0 +1,390 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+}
+html, body {
+height: 100%;
+min-height: 100%;
+margin: 0;
+padding: 0;
+}
+
+body {
+background: #FFFFFF;
+color: #000000;
+text-align: center;
+font: 16px Roboto;
+}
+
+a {
+color: #f1f1f1;
+text-decoration: none;
+}
+
+a:visited {
+color: #dcdcdc;
+}
+
+a:hover {
+color: #48D1CC;
+text-decoration: underline;
+}
+
+ul {
+margin: 0;
+padding: 0;
+}
+
+li {
+list-style: none;
+}
+
+/* HEADINGS */
+h1, h2 {
+font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+margin: 0px;
+}
+
+h1 {
+font-size: 48px;
+line-height: 4.5rem;
+}
+
+h2 {
+font-size: 32px;
+line-height: 4rem;
+}
+
+h3 {
+font-size: 24px;
+line-height: 38px;
+font-weight: 300;
+}
+
+h4 {
+font-size: 20px;
+line-height: 30px;
+font-weight: 300;
+}
+
+h5 {
+font-size: 15px;
+font-weight: 300;
+}
+
+/*Nav Bar*/
+.navbar {
+background: gray;
+float: none;
+width: 100%;
+height: 135px;
+z-index: 9999;
+position: fixed !important;
+top: 0;
+border: 1px solid #DCDCDC;
+border-radius: 3px;
+
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 250px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+    margin-left: 20px;
+  border: none;
+  display: flex;
+    position: relative;
+    transform: translate(0px, -50%);
+    top: 50%;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+.topnav a {
+    float: left;
+    text-align: center;
+}
+.navbar-logo {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+    float: right;
+}
+.topnav-right a img {
+    height: 30px;
+    margin: 0 30px 0 0;
+}
+
+/*Hover Dropdown Store*/
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.flex div {padding: 5px; background: #00000070; color: white;}
+.flex img {width: 80px; border: 1px solid #ffffff7d;}
+.flex3 {display: flex; flex-direction: row; justify-content: space-between; width: 300px; border: 1px solid #ffffff7d; text-align:center;}
+.flex3 div {width: 33%; border: 1px solid #ffffff7d;}
+.center-flex {display: flex; justify-content: center; align-items: center;}
+.flex3 .rowhai {width: 50%; border: 1px solid #ffffff7d;}
+.flex1 {display: flex; flex-direction: row; justify-content: center; width: 300px; border: 1px solid #ffffff7d; text-align:center;}
+
+/*HTML5LightBox*/
+#html5-watermark {
+display:none !important;
+}
+
+.col-md-6 ul li a {
+font-size: x-large;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {  
+background: #3a3a3c;
+color: white;
+  padding: 30px;
+  text-align: center;
+  display: flex;  
+  flex-flow: row wrap;
+}
+.footer > * {
+  flex: 1 100%;
+}
+.footer h3 {
+	padding: 0 0 15px 0;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .footer-center {flex: 1 0px;}
+  .footer-left {order: 1;} 
+  .footer-center {order: 2;}
+  .footer-right {order: 3;}
+  .footer-bottom {order: 4;}
+}
+/* Footer Left */
+.footer-left {
+text-align: center;
+}
+
+.fl-logo {
+position: relative;
+top: 50%;
+transform: translateY(-60%);
+}
+/* Footer Center */
+.footer-center {  
+display: flex;  
+flex-flow: row wrap;
+}
+.footer-center > * {
+  flex: 1 100%;
+}
+
+.footer-center a {  
+padding: 5px;
+font-size: 15px;
+display: block;
+}
+.footer-center h3 {  
+display: block;
+}
+
+@media all and (min-width: 600px) {
+  .fc { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .Categories-Center {flex: 1 0px;}
+  .Categories-Left {order: 1;} 
+  .Categories-Center {order: 2;}
+  .Categories-Right {order: 3;}
+}
+
+/* Footer Right */
+.footer-contact h5 {
+padding: 5px 0 5px 0;
+}
+
+.footer-bottom {
+margin: 10px;
+font-size: 12px;
+border-top: 1px solid gray;
+display: flex;  
+flex-flow: row wrap;
+}
+.footer-bottom p {
+margin: 10px auto 5px auto;
+}
+@media all and (min-width: 600px) {
+  .fb { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .fb-center {flex: 1 0px;}
+  .footer-social {order: 1;} 
+  .fb-center {order: 2;}
+  .footer-pay {order: 3;}
+}
+/* SOCIAL NETWORK */
+.footer-social {
+margin: 0 auto;
+}
+
+.footer-social a img {
+height: 30px;
+margin: 5px;
+}
+
+/* FB CENTER */
+.pts {
+margin: 10px;
+}
+.pts a {
+margin: 15px;
+}
+/* PAYMENT METHODS */
+.footer-pay {
+margin: 0 auto;
+}
+
+.footer-pay a img {
+height: 30px;
+margin: 5px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
