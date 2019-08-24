@@ -219,16 +219,20 @@ font-size: x-large;
 
 /* Header/logo Title */
 .header {
-  padding: 60px;
   text-align: center;
   background: #1abc9c;
   color: white;
 }
+.bg-header {
+	height: 700px;
+	margin-top: 135px;
+}
 
 /* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
+.container {  
+height: 3577px;
+display: flex;
+flex-wrap: wrap;
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -373,7 +377,7 @@ margin: 5px;
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row, .navbar {   
+  .container, .navbar {   
     flex-direction: column;
   }
 
