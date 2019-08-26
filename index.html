@@ -18,31 +18,101 @@
 </head>
 <body>
 
+
+
+
+
+
+
+
+
+
 <!-- Header -->
 <div class="header">
-
-
 
 <!-- Navigation Bar -->
 <div class="navbar">
 
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+<!-- Menu -->
+<div class="menu">
+<div class="menu-dropdown">
+<button class="menu-drop"><img src="./files/images/icon/menu.png" alt="Store">
+  <div class="middle">
+    <p>MENU</p>
+  </div>
+</button>
+<div class="menu-dropdown-content" style="float:right;">
+
+<div class="menu-list-link">
+    <a href="#">BIOGRAPHY</a>
+    <a href="#">NEW UPLOAD</a>
+    <a href="#">ARTICLE & PRIZES</a>
+    <a href="#">GALLERY</a>
 </div>
-<button class="openbtn" onclick="openNav()">&#9776;</button> 
+<h3>CATEGORIES</h3>
+<div class='menu-flex'>
+<div>
+<a href="index.html">FINE ART B&W</a>
+<a href="index.html">TRADITIONL</a>
+<a href="index.html">LANDSCAPE</a>
+<a href="index.html">PORTRAITS</a>
+<a href="index.html">NATURE</a>
+<a href="index.html">HUMAN</a>
+</div>
+
+<div>
+<a href="index.html">DAILY WORKING</a>
+<a href="index.html">STILL LIFE</a>
+<a href="index.html">PANORAMA</a>
+<a href="index.html">CULTRURE</a>
+<a href="index.html">TREES</a>
+<a href="index.html">SAPA</a>
+</div>
+</div>
+
+<hr>
+
+<!--- Menu PTS --->
+<div class="menu-pts">
+<a href="index.html">MY ACCOUNT</a>
+<a href="index.html">CONTACT US</a>
+
+<hr>
+
+<a href="/privacy.html">Privacy Policy</a>
+<a href="/terms.html">Terms</a>
+<a href="/security.html">Security</a>
+<span>© HoangNhiemPhotos.com all rights reserved.</span>
+</div>
 
 
+
+
+</div>
+</div>
+
+<div class="nav-search">
+<form  target="_blank" action="./index.html">
+<input class="search-animated" name="search" placeholder="Search..">
+</form>
+</div>
+</div>
+
+<!-- Logo -->
 <div class="navbar-logo">
 <a href="index.html"><img src="./files/images/logo.png" alt="Hoang Nhiem Photos"></a>
 </div>
 
+<!-- Navigation Bar Right -->
 <div class="topnav-right">
-<div class="dropdown">
-<button class="dropbtn"><a href="#store"><img src="./files/images/icon/store.png" alt="Store"></a></button>
+
+<!-- Store -->
+<div class="dropdown" style="transform: translate(-15px, 0%);">
+<a href="store.html"><button class="dropbtn"><img src="./files/images/icon/store.png" alt="Store">
+  <div class="middle">
+    <p>STORE</p>
+  </div>
+</button></a>
 <div class="dropdown-content" style="float:right;">
 <div class = 'flex'>
 <div class = 'flex3'>
@@ -79,17 +149,69 @@
 </div>
 </div>
 
-<a href="#profile"><img src="./files/images/icon/profile.png" alt="profile"></a>
+<!-- Profile -->
+<div class="dropdown">
+<button class="dropbtn">
+<a href="#profile">
+<img src="./files/images/icon/profile.png" alt="profile">
+</a>
+  <div class="middle">
+    <p>PROFILE</p>
+  </div>
+</button>
+
+<div class="dropdown-content" style="float:right;">
+<div class = 'flex'>
+<div class = 'flex3'>
+<div>
+<a href="mekong-river.html">
+<img src="./files/images/album/1.jpg">
+<p>Mekong river</p>
+</a>
+</div>
+<div class="center-flex">Digital</div>
+<div class="center-flex">$60 USD</div>
+</div>
+
+<div class = 'flex3'>
+<div>
+<a href="cuu-long-river.html">
+<img src="./files/images/album/2.jpg">
+<p>Cu Long river</p>
+</a>
+</div>
+<div class="center-flex">Digital</div>
+<div class="center-flex">$100 USD</div>
+</div>
+
+<div class = 'flex3'>
+<div class = 'rowhai'>Total: </div>
+<div class = 'rowhai'>$160 USD</div>
+</div>
+
+<div class = 'flex1'>
+<div><a href="pay.html">PAY</a></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
+</div>
+<!-- /Navigation Bar -->
+
+
+
+
+
+
+
+
+
+
+<!-- BG Header -->
 <div class="bg-header">
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+
 </div>
   
 </div>
@@ -205,6 +327,5 @@
 <!--==============================JS==============================-->
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
-<script src="js/Collapsed-Sidepanel.js"></script>
 </body>
 </html>

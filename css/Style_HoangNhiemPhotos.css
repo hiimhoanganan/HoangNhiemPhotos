@@ -77,76 +77,136 @@ font-weight: 300;
 
 /*Nav Bar*/
 .navbar {
-background: gray;
-float: none;
-width: 100%;
-height: 135px;
-z-index: 9999;
-position: fixed !important;
-top: 0;
-border: 1px solid #DCDCDC;
-border-radius: 3px;
+    background: #3a3a3c;
+    float: none;
+    z-index: 9999;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #DCDCDC;
+    border-radius: 3px;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px 0 30px;
 }
 
 /* The sidepanel menu */
-.sidepanel {
-  height: 250px; /* Specify a height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-}
 
-/* The sidepanel links */
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
 
-/* When you mouse over the navigation links, change their color */
-.sidepanel a:hover {
-  color: #f1f1f1;
-}
 
-/* Position and style the close button (top right corner) */
-.sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style the button that is used to open the sidepanel */
-.openbtn {
-  font-size: 40px;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-    margin-left: 20px;
+/*Hover Dropdown Store*/
+.menu-drop {
+  background-color: #4caf5000;
   border: none;
-  display: flex;
-    position: relative;
-    transform: translate(0px, -50%);
-    top: 50%;
+  cursor: pointer;
+}
+.menu-drop img {
+	height:30px;
 }
 
-.openbtn:hover {
-  background-color: #444;
+.menu-dropdown {
+  position: relative;
+  display: inline-block;
 }
-.topnav a {
+
+.menu-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu-list-link {
+	font-size: 24px;
+	font-weight: bold;
+}
+.menu-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-dropdown-content h3 {
+background:black;
+}
+
+.middle {
+  transition: 0.3s ease;
+  opacity: 0;
+  position: absolute;
+transform: translate(10%, -90%);
+    color: white;
+font-weight: bolder;
+font-size: 12px;
+}
+
+.menu-dropdown-content a:hover {background-color: #f1f1f1;}
+.menu-dropdown:focus-within .menu-dropdown-content {display: block;}
+.menu-dropdown:hover .menu-drop img {
+  opacity: 0.1;
+}
+
+.menu-dropdown:hover .middle {
+  opacity: 1;
+}
+
+.menu-flex {
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-between; 
+	width: 300px; 
+	border: 1px solid #ffffff7d; 
+	text-align:center;
+	}
+
+.menu-pts span {
+font-size: 12px;
+background: black;
+display: block;
+}
+
+.menu {
+    display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+
+/* Search Animated */
+.nav-search {
+margin: 0 30px 0 30px;
+}
+.search-animated {
+    height: 40px;
     float: left;
-    text-align: center;
+    width: 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(../files/images/icon/search.png);
+    background-size: 20px;
+    background-position: 9px 9px;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.2s ease-in-out;
 }
+.search-animated:hover {
+  width: 100%;
+}
+
+/* Logo */
 .navbar-logo {
     float: none;
     position: absolute;
@@ -154,21 +214,20 @@ border-radius: 3px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.navbar-logo img {
+	height: 60px;
+	}
 
 .topnav-right {
     float: right;
 }
 .topnav-right a img {
     height: 30px;
-    margin: 0 30px 0 0;
 }
 
 /*Hover Dropdown Store*/
 .dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+  background-color: #4caf5000;
   border: none;
   cursor: pointer;
 }
@@ -197,7 +256,13 @@ border-radius: 3px;
 
 .dropdown-content a:hover {background-color: #f1f1f1;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn img {
+  opacity: 0.1;
+}
+
+.dropdown:hover .middle {
+  opacity: 1;
+}
 
 .flex div {padding: 5px; background: #00000070; color: white;}
 .flex img {width: 80px; border: 1px solid #ffffff7d;}
@@ -219,12 +284,24 @@ font-size: x-large;
 /* Header/logo Title */
 .header {
   text-align: center;
-  background: #1abc9c;
+  background: white;
   color: white;
 }
 .bg-header {
-height: 765px;
-margin-top: 135px;
+    height: 912px;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search Container */
+.search-container form input {  
+height: 40px;
+}
+.search {
+width: 40px;
 }
 
 /* Column container */
