@@ -106,7 +106,8 @@ font-weight: 300;
   cursor: pointer;
 }
 .menu-drop img {
-	height:30px;
+	height:20px;
+	cursor: pointer;
 }
 
 .menu-dropdown {
@@ -145,7 +146,7 @@ background:black;
 transform: translate(10%, -90%);
     color: white;
 font-weight: bolder;
-font-size: 12px;
+font-size: 10px;
 }
 
 .menu-dropdown-content a:hover {background-color: #f1f1f1;}
@@ -186,19 +187,20 @@ display: block;
 margin: 0 30px 0 30px;
 }
 .search-animated {
-    height: 40px;
+    height: 25px;
     float: left;
     width: 0px;
+	cursor: inherit;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 3px;
     font-size: 16px;
     background-color: white;
     background-image: url(../files/images/icon/search.png);
-    background-size: 20px;
-    background-position: 9px 9px;
+    background-size: 15px;
+    background-position: 7px 3px;
     background-repeat: no-repeat;
-    padding: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 30px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.2s ease-in-out;
 }
@@ -222,7 +224,8 @@ margin: 0 30px 0 30px;
     float: right;
 }
 .topnav-right a img {
-    height: 30px;
+
+    height: 20px;
 }
 
 /*Hover Dropdown Store*/
@@ -272,13 +275,9 @@ margin: 0 30px 0 30px;
 .flex3 .rowhai {width: 50%; border: 1px solid #ffffff7d;}
 .flex1 {display: flex; flex-direction: row; justify-content: center; width: 300px; border: 1px solid #ffffff7d; text-align:center;}
 
-/*HTML5LightBox*/
+/*HTML5Box*/
 #html5-watermark {
 display:none !important;
-}
-
-.col-md-6 ul li a {
-font-size: x-large;
 }
 
 /* Header/logo Title */
@@ -307,30 +306,31 @@ width: 40px;
 /* Column container */
 .container {  
 height: 3577px;
-display: flex;
-flex-wrap: wrap;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+background-color: #f1f1f1;
+padding: 20px;
 }
 
-/* Main column */
-.main {
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
+.ABOUT-THE-PHOTOGRAPHER {
+	  margin: 0 10px 0 0;
+	  text-align: left;
+	  width: 500px;
+	  height: 480px;
 }
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+.IMG-ABOUT-THE-PHOTOGRAPHER {
+	width: 380px;
+	height: 480px;
+	margin: 20px;
+}
+.IMG-ABOUT-THE-PHOTOGRAPHER img {
+	width: inherit;
 }
 
 /* Footer */
