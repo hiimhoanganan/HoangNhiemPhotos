@@ -314,23 +314,43 @@ height: 3577px;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-background-color: #f1f1f1;
-padding: 20px;
+margin: 150px 0 0 0;
 }
 
 .ABOUT-THE-PHOTOGRAPHER {
-	  margin: 0 10px 0 0;
+	  margin: 0 32.5px 0 0;
 	  text-align: left;
-	  width: 500px;
+	  width: 570px;
 	  height: 480px;
 }
 .IMG-ABOUT-THE-PHOTOGRAPHER {
 	width: 380px;
 	height: 480px;
-	margin: 20px;
+	margin: 0 0 0 32.5px;
+	position: relative;
+  overflow: hidden;
 }
 .IMG-ABOUT-THE-PHOTOGRAPHER img {
-	width: inherit;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  margin: auto;
+}
+.NEW-UPLOAD {
+margin: 85px 0 0 0;
+}
+.NEW-UPLOAD-CON {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.html5gallery-box-1 {
+display: none !important;
+}
+.html5gallery-car-1 {
+position: unset !important;
 }
 
 /* Footer */
