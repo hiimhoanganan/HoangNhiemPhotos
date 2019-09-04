@@ -45,7 +45,7 @@ font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-margin: 0px;
+margin: 0;
 }
 
 h1 {
@@ -150,7 +150,7 @@ font-size: 10px;
 }
 
 .menu-dropdown-content a:hover {background-color: #f1f1f1;}
-.menu-dropdown:focus-within .menu-dropdown-content {display: block;}
+.menu-dropdown:hover .menu-dropdown-content {display: block;}
 .menu-dropdown:hover .menu-drop img {
   opacity: 0.1;
 }
@@ -303,57 +303,192 @@ height: 40px;
 width: 40px;
 }
 
-/* Column container */
+/* Container */
 .container {  
-height: 3577px;
+margin: 0 30px 0 30px
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
+.button {
+background: #3a3a3c;
+padding: 8.5px 24px;
+}
+
+/* ABOUT THE PHOTOGRAPHER */
+.ABOUT {
+border-bottom: 2px solid black;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-margin: 150px 0 0 0;
+margin: 90px 0 0 0;
 }
 
 .ABOUT-THE-PHOTOGRAPHER {
-	  margin: 0 32.5px 0 0;
-	  text-align: left;
-	  width: 570px;
-	  height: 480px;
+margin: 0 32.5px 0 0;
+text-align: left;
+width: 570px;
+height: 480px;
 }
 .IMG-ABOUT-THE-PHOTOGRAPHER {
-	width: 380px;
-	height: 480px;
-	margin: 0 0 0 32.5px;
-	position: relative;
-  overflow: hidden;
+	border: 1px #222 solid;
+border-radius: 3px;
+width: 380px;
+height: 480px;
+margin: 0 0 0 32.5px;
+position: relative;
+overflow: hidden;
 }
 .IMG-ABOUT-THE-PHOTOGRAPHER img {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-  right: -9999px;
-  bottom: -9999px;
-  margin: auto;
+position: absolute;
+top: -9999px;
+left: -9999px;
+right: -9999px;
+bottom: -9999px;
+margin: auto;
 }
+
+/* NEW UPLOAD */
 .NEW-UPLOAD {
-margin: 85px 0 0 0;
+margin: 90px 0 0 0;
+border-bottom: 2px solid black;
 }
-.NEW-UPLOAD-CON {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+
+.NEW-UPLOAD .html5gallery {
+height: unset !important;
 }
+.h1-border-bottom {
+line-height: 1;
+border-bottom: 2px solid black;
+width: max-content;
+margin: 0 auto;
+margin-bottom: 67px;
+padding-bottom: 24px;
+}
+
 .html5gallery-box-1 {
 display: none !important;
 }
 .html5gallery-car-1 {
 position: unset !important;
+margin: 0 auto;
+}
+.html5gallery-car-list-1 {
+position: unset !important;
+left: 0px !important;
+margin: 0 auto;
+}
+.html5gallery-thumbs-1 {
+top: 0 !important;
+}
+.html5gallery-car-mask-1 {
+	margin: 0 auto;
+position: unset !important;
+left: 0px !important;
+}
+.html5gallery-container-1 {
+position: unset !important;
+height: unset !important;
+}
+/* GALLERY Photo Grid */
+.GALLERY {
+border-bottom: 2px solid black;
+margin: 85px 0 0 0;
+}
+.Photo-Grid-row {
+display: flex;
+flex-wrap: wrap;
 }
 
-/* Footer */
+.Photo-Grid-column {
+flex: 33.3%;
+max-width: 33.3%;
+}
+
+.Photo-Grid-column img {
+vertical-align: middle;
+}
+
+.Photo-Grid-column1 {
+flex: 33.3%;
+max-width: 33.3%;
+padding: 2px;
+flex-flow: row wrap;
+display: flex;
+align-self: start;
+}
+
+.Photo-Grid-column1 img {
+padding: 2px;
+}
+
+.Photo-Grid-column1 div img {
+padding: 2px ;
+width: 100%;
+height: 187px;
+object-fit: cover;
+}
+
+.Photo-Grid-column2 img {
+padding: 2px 2px 2px 0 ;
+width: 100%;
+height: 187px;
+object-fit: cover;
+}
+
+/* Responsive GALLERY Photo Grid */
+@media screen and (max-width: 600px) {
+.Photo-Grid-column {
+flex: 100%;
+max-width: 100%;
+}
+.Photo-Grid-column1 {
+flex: 100%;
+max-width: 100%;
+}
+}
+
+/* EXHIBITIONS */
+.EXHIBITIONS {
+border-bottom: 2px solid black;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 90px 0 0 0;
+}
+
+.IMG-EXHIBITIONS {
+width: 380px;
+height: 480px;
+margin: 0 32.5px 0 0;
+position: relative;
+overflow: hidden;
+border: 1px #222 solid;
+border-radius: 3px;
+}
+.IMG-EXHIBITIONS img {
+position: absolute;
+top: -9999px;
+left: -9999px;
+right: -9999px;
+bottom: -9999px;
+margin: auto;
+}
+
+.EXHIBITIONS-CON {
+margin: 0 0 0 32.5px;
+text-align: left;
+width: 570px;
+height: 480px;
+}
+
+/* ARTICLE */
+.ARTICLE {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 90px 0 90px 0;
+}
+
+/* FOOTER */
 .footer {  
 background: #3a3a3c;
 color: white;

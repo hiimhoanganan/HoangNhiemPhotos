@@ -15,6 +15,7 @@
 <!-- =========================CSS============================== -->
 <link rel="stylesheet" type="text/css" href="css/Style_HoangNhiemPhotos.css">
 <link rel="stylesheet" href="html5lightbox/icons/css/fontello.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/Horizontal-Scroller.css">
 </head>
 <body>
 
@@ -220,7 +221,7 @@ data-skin="light"
 data-showtitle="false"  
 data-showcarousel="false"  
 data-autoplayvideo="true" 
-data-defaultvideovolume="0"
+data-defaultvideovolume="0.3"
 data-effect="fade" 
 data-resizemode="fill" 
 data-padding="0"
@@ -235,11 +236,8 @@ data-loop="0"
 
 <a href=".\files\images\album\2.jpg"><img src=".\files\images\album\2.jpg" alt="Swan on Lake"></a>
 
-<!-- Add videos to Gallery -->
-<a href="images/Big_Buck_Bunny.mp4"><img src="images/Big_Buck_Bunny.jpg" alt="Big Buck Bunny, Copyright Blender Foundation"></a>
-
 <!-- Add Youtube video to Gallery -->
-<a href="http://www.youtube.com/embed/YE7VzlLtp-4?rel=0&autoplay=1"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Youtube Video"></a>
+<a href="https://www.youtube.com/watch?v=VeiKS7ak4-Y?rel=0&autoplay=1&mute=1"><img src="https://www.youtube.com/watch?v=VeiKS7ak4-Y/2.jpg" alt="Youtube Video"></a>
 
 <!-- Add images to Gallery -->
 <a href="images/Tulip_large.jpg"><img src="images/Tulip_small.jpg" alt="Tulips"></a>
@@ -252,43 +250,27 @@ data-loop="0"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- The flexible grid (content) -->
 <div class="container">
-<div class="side">
+<div class="ABOUT">
 <div class="ABOUT-THE-PHOTOGRAPHER">
 <div>
 <h1>ABOUT</h1>
 <h1>THE PHOTOGRAPHER</h1>
-<span>
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-Some text about me in culpa qui officia deserunt mollit anim..
-</span>
+
+<p>HOÀNG THẾ NHIỆM</p>
+<p>
+Sinh năm 1960 tại thành phố Hồ Chí Minh-Việt Nam.
+Sống và làm việc tại thành phố Hồ Chí Minh
+Thành viên của HOPA (Hiệp hội nhiếp ảnh HochiMinh.)
+VAPA (Hiệp hội nghệ sĩ nhiếp ảnh Việt Nam.)
+A.FIAP (Nghệ sĩ của Liên đoàn nghệ thuật nhiếp ảnh quốc tế)
+
+Hoàng Thế Nhiệm là tay máy xuất sắc trong thể loại ảnh phong cảnh của Việt Nam . Anh là người chụp ảnh đẹp,đặc sắc về Sa pa sau thế hệ võ An Ninh. Anh đã có rất nhiều triển lãm ảnh cả trong nước và thế giới như Mỹ, Pháp, Bỉ, Anh…
+Ảnh của anh mang nét đẹp tự nhiên vốn có của thiên nhiên...
+</p>
 <br>
-<a href="index.html" alt="Hoang Nhiem Photos">VIEW ALL...</a>
+<a class="button" href="index.html" alt="Hoang Nhiem Photos">VIEW ALL...</a>
 </div>
 </div>
 
@@ -297,15 +279,12 @@ Some text about me in culpa qui officia deserunt mollit anim..
 </div>
 </div>
 
-<hr style="margin: 0;">
-
 <!-- NEW UPLOAD -->
-<h1>NEW UPLOAD</h1>
-<hr style="margin: 0;">
-<div class="NEW-UPLOAD-CON">
+<div class="NEW-UPLOAD">
+<h1 class="h1-border-bottom">NEW&nbsp; UPLOAD</h1>
 
 
-<div class="html5gallery" 
+<div class="html5gallery" style="height: auto !important;"
 data-skin="light"
 data-responsive="true"
 data-html5player="true" 
@@ -314,6 +293,9 @@ data-thumbwidth="255"
 data-thumbheight="370" 
 data-thumbgap="30"
 carouselbgtransparent="true"
+data-loop="0"
+data-autoslide="true" 
+
 >
 <img src="./files\images\album\1.jpg" alt="Trees">
 <img src="./files\images\album\1.jpg" alt="Island">
@@ -323,11 +305,234 @@ carouselbgtransparent="true"
 <img src="./files\images\album\1.jpg" alt="Island">
 <img src="./files\images\album\1.jpg" alt="Opera House">
 <img src="./files\images\album\1.jpg" alt="Opera House">
+<img src="./files\images\album\1.jpg" alt="Trees">
+<img src="./files\images\album\1.jpg" alt="Island">
+<img src="./files\images\album\1.jpg" alt="Opera House">
+<img src="./files\images\album\1.jpg" alt="Opera House">
+<img src="./files\images\album\1.jpg" alt="Trees">
+<img src="./files\images\album\1.jpg" alt="Island">
+<img src="./files\images\album\1.jpg" alt="Opera House">
+<img src="./files\images\album\1.jpg" alt="Opera House">
 </div>
+</div>
+
+<!-- GALLERY -->
+<div class="GALLERY">
+<h1 class="h1-border-bottom">GALLERY</h1>
+
+<!-- Photo Grid -->
+<div class="Photo-Grid-row"> 
+<div class="Photo-Grid-column1">
+<img src="./files\images\album\1.jpg" style="width:100%; height: 374px; object-fit: cover;">
+<div style="flex-flow: column wrap; display: flex; width: 50%;">
+<img src="./files\images\album\1.jpg" style="width: 100%;">
+<img src="./files\images\album\1.jpg" style="width: 100%;">
+</div>
+<img src="./files\images\album\1.jpg" style="width: 50%; height: 374px; object-fit: cover;">
+</div>
+
+<div class="Photo-Grid-column">
+<div class="Photo-Grid-column2">
+<img src="./files\images\album\1.jpg" style="width:100%">
+<img src="./files\images\album\1.jpg" style="width:100%">
+<img src="./files\images\album\1.jpg" style="width:100%">
+<img src="./files\images\album\1.jpg" style="width:100%">
+</div> 
+</div> 
+
+<div class="Photo-Grid-column1">
+<img src="./files\images\album\1.jpg" style="width: 50%; height: 374px; object-fit: cover;">
+<div style="flex-flow: column wrap;display: flex;width: 50%;">
+<img src="./files\images\album\1.jpg" style="width: 100%;">
+<img src="./files\images\album\1.jpg" style="width: 100%;">
+</div>
+
+<div class="Photo-Grid-column" style="max-width: 100% !important;">
+<img src="./files\images\album\1.jpg" style="width:100%">
+<img src="./files\images\album\1.jpg" style="width:100%">
+</div>
+</div>
+</div>
+</div>
+
+<!-- EXHIBITIONS -->
+<div class="EXHIBITIONS">
+
+<div class="IMG-EXHIBITIONS">
+<img src="./files\images\album\1.jpg" alt="Hoang Nhiem Photos">
+</div>
+
+<div class="EXHIBITIONS-CON">
+<h1>EXHIBITIONS</h1>
+
+<p>
+Nhiếp ảnh gia Hoàng Thế Nhiệm sẽ có một cuộc triển lãm mới, hứa hẹn mang đến những ấn tượng mới qua các tác phẩm trong “Paris, những cái nhìn đầu tiên” (ảnh) và “VN, quê hương tuổi thơ dịu dàng”. 
+</p>
+
+<p>
+Để có thể nắm bắt ánh sáng, thể hiện lại mọi sắc thái tinh tế nhất, Hoàng Thế Nhiệm đã rất kiên nhẫn trước cảnh đẹp, quay lại nhiều lần và thực hiện cả trăm lần tác phẩm của mình.
+</p>
+
+<p>
+Phải có một lòng kiên nhẫn và kỹ thuật điêu luyện mới có thể chuyển tải đến người xem cái nhìn đầu tiên thuần khiết và nhạy cảm của người nghệ sĩ.
+</p>
+
+<br>
+<a class="button" href="index.html" alt="Hoang Nhiem Photos">VIEW ALL...</a>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="ARTICLE">
+<h1 class="h1-border-bottom">ARTICLE</h1>
+<!-- Horizontal Scroller -->
+<div class="hs__wrapper">
+<ul class="hs">
+
+<!-- HS Items -->
+<li class="hs__item"> 
+<div class="hs__item__content__wrapper">
+<a href="index.html">
+<div class="HS-IMG">
+<img src="./files\images\album\1.jpg" alt="Hoang Nhiem Photos">
+</div>
+
+<h3>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm - Sa Pa</h3>
+<a>www.sapalaocai.com › Tin tức</a>
+<br>
+<p>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm Người ấy là nghệ sỹ nhiếp ảnh Hoàng Thế Pa” như ai đó nói vui. Kể từ năm 1995 ...</p>
+<br>
+<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW ALL...</a>
+</a>
+</div>
+</li>
+
+<!-- HS Items -->
+<li class="hs__item"> 
+<div class="hs__item__content__wrapper">
+<div class="HS-IMG">
+<img src="./files\images\album\1.jpg" alt="Hoang Nhiem Photos">
+</div>
+
+<h3>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm - Sa Pa</h3>
+<a>www.sapalaocai.com › Tin tức</a>
+<br>
+<p>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm Người ấy là nghệ sỹ nhiếp ảnh Hoàng Thế Pa” như ai đó nói vui. Kể từ năm 1995 ...</p>
+</div>
+</li>
+	
+<!-- HS Items -->
+<li class="hs__item"> 
+<div class="hs__item__content__wrapper">
+<div class="HS-IMG">
+<img src="./files\images\album\1.jpg" alt="Hoang Nhiem Photos">
+</div>
+
+<h3>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm - Sa Pa</h3>
+<a>www.sapalaocai.com › Tin tức</a>
+<br>
+<p>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm Người ấy là nghệ sỹ nhiếp ảnh Hoàng Thế Pa” như ai đó nói vui. Kể từ năm 1995 ...</p>
+</div>
+</li>
+
+<!-- HS Items -->
+<li class="hs__item"> 
+<div class="hs__item__content__wrapper">
+<div class="HS-IMG">
+<img src="./files\images\album\1.jpg" alt="Hoang Nhiem Photos">
+</div>
+
+<h3>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm - Sa Pa</h3>
+<a>www.sapalaocai.com › Tin tức</a>
+<br>
+<p>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm Người ấy là nghệ sỹ nhiếp ảnh Hoàng Thế Pa” như ai đó nói vui. Kể từ năm 1995 ...</p>
+</div>
+</li>
+	
+<!-- HS Items -->
+<li class="hs__item"> 
+<div class="hs__item__content__wrapper">
+<div class="HS-IMG">
+<img src="./files\images\album\1.jpg" alt="Hoang Nhiem Photos">
+</div>
+
+<h3>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm - Sa Pa</h3>
+<a>www.sapalaocai.com › Tin tức</a>
+<br>
+<p>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm Người ấy là nghệ sỹ nhiếp ảnh Hoàng Thế Pa” như ai đó nói vui. Kể từ năm 1995 ...</p>
+</div>
+</li>
+
+<!-- HS Items -->
+<li class="hs__item"> 
+<div class="hs__item__content__wrapper">
+<div class="HS-IMG">
+<img src="./files\images\album\1.jpg" alt="Hoang Nhiem Photos">
+</div>
+
+<h3>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm - Sa Pa</h3>
+<a>www.sapalaocai.com › Tin tức</a>
+<br>
+<p>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm Người ấy là nghệ sỹ nhiếp ảnh Hoàng Thế Pa” như ai đó nói vui. Kể từ năm 1995 ...</p>
+</div>
+</li>
+	
+<!-- HS Items -->
+<li class="hs__item"> 
+<div class="hs__item__content__wrapper">
+<div class="HS-IMG">
+<img src="./files\images\album\1.jpg" alt="Hoang Nhiem Photos">
+</div>
+
+<h3>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm - Sa Pa</h3>
+<a>www.sapalaocai.com › Tin tức</a>
+<br>
+<p>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm Người ấy là nghệ sỹ nhiếp ảnh Hoàng Thế Pa” như ai đó nói vui. Kể từ năm 1995 ...</p>
+</div>
+</li>
+
+<!-- HS Items -->
+<li class="hs__item"> 
+<div class="hs__item__content__wrapper">
+<div class="HS-IMG">
+<img src="./files\images\album\1.jpg" alt="Hoang Nhiem Photos">
+</div>
+
+<h3>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm - Sa Pa</h3>
+<a>www.sapalaocai.com › Tin tức</a>
+<br>
+<p>Nghệ sỹ nhiếp ảnh Hoàng Thế Nhiệm Người ấy là nghệ sỹ nhiếp ảnh Hoàng Thế Pa” như ai đó nói vui. Kể từ năm 1995 ...</p>
+</div>
+</li>
+
+<!-- HS Prev Button Control -->
+<div class="arrows hs_arrow-prev">
+<a class="arrow disabled arrow-prev"></a>
+</div>
+<!-- HS Next Button Control -->
+<div class="arrows hs_arrow-next">
+<a class="arrow arrow-next"></a>
+</div>
+
+</ul>
+</div>
+</div>
+
+
+
+
 
 </div>
 
-</div>
+
 
 <!-- Footer -->
 <div class="footer">
@@ -414,5 +619,6 @@ carouselbgtransparent="true"
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
 <script type="text/javascript" src="html5gallery/html5gallery.js"></script>
+<script type="text/javascript" src="js/Horizontal-Scroller.js"></script>
 </body>
 </html>
