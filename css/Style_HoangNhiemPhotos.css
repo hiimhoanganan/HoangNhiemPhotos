@@ -228,7 +228,7 @@ margin: 0 30px 0 30px;
     height: 20px;
 }
 
-/*Hover Dropdown Store*/
+/* Store: Hover Dropdown */
 .dropbtn {
   background-color: #4caf5000;
   border: none;
@@ -244,7 +244,7 @@ margin: 0 30px 0 30px;
   display: none;
   position: absolute;
   right: 0;
-  background-color: #f9f9f9;
+  background-color: transparent;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -252,7 +252,6 @@ margin: 0 30px 0 30px;
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
@@ -266,14 +265,39 @@ margin: 0 30px 0 30px;
 .dropdown:hover .middle {
   opacity: 1;
 }
-
-.flex div {padding: 5px; background: #00000070; color: white;}
-.flex img {width: 80px; border: 1px solid #ffffff7d;}
-.flex3 {display: flex; flex-direction: row; justify-content: space-between; width: 300px; border: 1px solid #ffffff7d; text-align:center;}
-.flex3 div {width: 33%; border: 1px solid #ffffff7d;}
+.flex {color: black;}
+.flex div {
+	padding: 5px; 
+	background: #ffffffad;
+    border-radius: 3px;
+}
+.flex3 {display: flex; 
+flex-direction: row; 
+justify-content: space-between; 
+width: 300px; 
+border: 1px solid #222; 
+text-align:center;
+}
+.flex3 div {width: 33%; border: 1px solid #222;}
+.flex3 a img {width: 83px; height: auto; border: 1px solid #222;}
 .center-flex {display: flex; justify-content: center; align-items: center;}
-.flex3 .rowhai {width: 50%; border: 1px solid #ffffff7d;}
-.flex1 {display: flex; flex-direction: row; justify-content: center; width: 300px; border: 1px solid #ffffff7d; text-align:center;}
+.flex3 .rowhai {width: 50%; border: 1px solid #222; border-radius: 0;}
+.flex1 {display: flex; flex-direction: row; justify-content: center; width: 300px; border: 1px solid #222; text-align:center;}
+
+/* Profile: Hover Dropdown */
+.profile {
+background: white;
+min-width: 200px;
+padding: 10px 0 0 0;
+    text-align: left;
+}
+.profile a {
+padding: 5px 10px;
+}
+.profile a img {
+    height: 12px;
+}
+
 
 /*HTML5Box*/
 #html5-watermark {
@@ -348,7 +372,7 @@ margin: auto;
 
 /* NEW UPLOAD */
 .NEW-UPLOAD {
-margin: 90px 0 0 0;
+padding: 90px 0 0 0;
 border-bottom: 2px solid black;
 }
 
@@ -391,7 +415,7 @@ height: unset !important;
 /* GALLERY Photo Grid */
 .GALLERY {
 border-bottom: 2px solid black;
-margin: 85px 0 0 0;
+padding: 90px 0 0 0;
 }
 .Photo-Grid-row {
 display: flex;
@@ -452,7 +476,7 @@ border-bottom: 2px solid black;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-margin: 90px 0 0 0;
+padding: 90px 0 0 0;
 }
 
 .IMG-EXHIBITIONS {
@@ -485,7 +509,7 @@ height: 480px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 90px 0 90px 0;
+    padding: 90px 0 0 0;
 }
 
 /* FOOTER */
