@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Justified Gallery - Infinite Scroll</title>
+
+<script src="js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/justifiedGallery.css" type="text/css" media="all">
+<script src="js/justifiedGallery.js"></script>
+
+
+<script type="text/javascript" src="highslide/highslide-with-gallery.packed.js"></script>
+<script type="text/javascript" src="highslide/highslide.config.js"></script>
+<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+
+
+<style>
+.load-more-content {
+display: none;
+}
+#load-more-button {
+width: 200px;
+color: #fff;
+display: block;
+text-align: center;
+margin: 20px auto;
+padding: 10px;
+border-radius: 10px;
+border: 1px solid transparent;
+background-color: blue;
+transition: .3s;
+}
+#load-more-button:hover {
+color: blue;
+background-color: #fff;
+border: 1px solid blue;
+text-decoration: none;
+}
+.end-load-more-content {
+color: #000 !important;
+background-color: transparent !important;
+pointer-events: none;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+$(".load-more-content").slice(0, 15).show();
+$("#load-more-button").on("click", function(e){
+e.preventDefault();
+$(".load-more-content:hidden").slice(0, 1).slideDown();
+if($(".load-more-content:hidden").length == 0) {
+$("#load-more-button").text("End Content").addClass("end-load-more-content");
+}
+});
+
+})
+</script>
+
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Arial;
+}
+
+.header {
+text-align: center;
+padding: 32px;
+}
+
+
+
+.row_flexbox_image_gallery {
+display: flex;
+flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.load-more-content {
+flex: 33.33333333333333%;
+max-width: 33.33333333333333%;
+}
+ 
+.load-more-content img {
+max-width: 100%;
+max-height: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+.column_flexbox_image_gallery {
+flex: 50%;
+max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+.column_flexbox_image_gallery {
+flex: 100%;
+max-width: 100%;
+}
+}
+</style>
+
+</head>
+<body>
+
+
+<!--Row Flex Gallery-->
+<div class="row_flexbox_image_gallery">
+<!--Column Flex Gallery-->
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/20.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/20.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/71.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/71.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/81.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/81.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/91.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/91.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/14.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/14.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/21.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/21.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/31.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/31.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/15.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/15.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/15.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/14.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/14.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/13.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/13.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/41.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/41.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/1.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/1.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/1.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/1.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+<div class="load-more-content">
+<a class="highslide" href="./files/images/album/1.jpg" onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg" alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+</div>
+<!--End Row Flex Gallery-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#" id="load-more-button">Load More...</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+/*Infinite-Gallery 
+$(window).scroll(function() {
+if($(window).scrollTop() + $(window).height() == $(document).height()) {
+for (i = 1; i < 109; i++) {
+$('#Infinite-Gallery').append('<div class="load-more-content"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/'+i+'.jpg"><img src="files/images/album/'+i+'.jpg" alt="'+i+'" title="'+i+'"/></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span></div>');
+}
+
+$('#Infinite-Gallery').justifiedGallery('norewind');
+}
+});
+
+$('#Infinite-Gallery').justifiedGallery({rowHeight:200});*/
+</script>
+
+</body></html>

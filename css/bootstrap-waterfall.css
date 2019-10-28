@@ -1,0 +1,62 @@
+#waterfall .pin {
+width: 50%;
+opacity: 0;
+animation-duration: 0.75s;
+animation-fill-mode: both; }
+#waterfall .pin img {
+width: 100% !important;
+border: 3px solid white;
+border-bottom-width: 0px;
+}
+#waterfall .pin.inView {
+opacity: 1;
+animation-name: bounceInUp; }
+#waterfall .pin.inView.fix {
+animation: none; }
+#waterfall .pin a {
+display: block;
+}
+
+* {
+box-sizing: border-box; }
+
+.container-waterfall {
+margin: inherit;
+text-align: center;
+}
+.container-waterfall #waterfall {
+max-width: 100%;
+margin: 0 auto; }
+
+@keyframes bounceInUp {
+from, 60%, 75%, 90%, to {
+animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);   }
+from {
+opacity: 0;
+transform: translate3d(0, 3000px, 0);   }
+60% {
+opacity: 1;
+transform: translate3d(0, -20px, 0);   }
+75% {
+transform: translate3d(0, 10px, 0);   }
+90% {
+transform: translate3d(0, -5px, 0);   }
+to {
+transform: translate3d(0, 0, 0);   }
+}
+
+@media (min-width: 768px) {
+#waterfall .pin {
+width: 50%;
+}
+}
+@media (min-width: 992px) {
+#waterfall .pin {
+width: 33.3%;
+}
+}
+@media (min-width: 1200px) {
+#waterfall .pin {
+width: 25%;
+}
+}

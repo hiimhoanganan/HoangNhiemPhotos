@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Wellcome to Hoang Nhiem Photos">
+<meta name="keywords" content="Hoang Nhiem Photos">
+<meta name="author" content="Hoang Nhiem Photos">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- =========================SITE TITLE============================== -->
+<title>Load more & Highslide</title>
+
+<!-- =========================FAV AND TOUCH ICONS============================== -->
+<link rel="icon" href="files/images/favicon.ico">
+<!-- =========================CSS============================== -->
+<link rel="stylesheet" type="text/css" href="css/Style_HoangNhiemPhotos.css">
+ 
+ 
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="highslide/highslide-with-gallery.packed.js"></script>
+<script type="text/javascript" src="highslide/highslide.config.js"></script>
+<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+ 
+ 
+ 
+ <style>
+ .load-more-content {
+  display: none;
+}
+#load-more-button {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: blue;
+  transition: .3s;
+}
+#load-more-button:hover {
+  color: blue;
+  background-color: #fff;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.end-load-more-content {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+ </style>
+ 
+ 
+ 
+ 
+<script>
+$(document).ready(function(){
+$(".load-more-content").slice(0, 2).show();
+$("#load-more-button").on("click", function(e){
+e.preventDefault();
+$(".load-more-content:hidden").slice(0, 2).slideDown();
+if($(".load-more-content:hidden").length == 0) {
+$("#load-more-button").text("End Content").addClass("end-load-more-content");
+}
+});
+
+})
+</script>
+
+</head>
+<body>
+
+
+<div class="highslide-gallery">
+
+<div class="load-more-content">
+<a href="./files/images/album/1.jpg" class="highslide" 
+onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg"  alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">
+Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+
+<div class="load-more-content">
+<a href="./files/images/album/1.jpg" class="highslide" 
+onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg"  alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">
+Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+ 
+<div class="load-more-content">
+<a href="./files/images/album/1.jpg" class="highslide" 
+onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg"  alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">
+Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+ 
+<div class="load-more-content">
+<a href="./files/images/album/1.jpg" class="highslide" 
+onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg"  alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">
+Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+ 
+<div class="load-more-content">
+<a href="./files/images/album/1.jpg" class="highslide" 
+onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg"  alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">
+Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+
+ 
+<div class="load-more-content">
+<a href="./files/images/album/1.jpg" class="highslide" 
+onclick="return hs.expand(this, config1 )">
+<img src="./files/images/album/1.jpg"  alt=""/>
+</a>
+<span class="highslide-heading">Heading</span>
+<span class="highslide-caption">
+Caption <a href="./files/images/album/1.jpg" target="_blank">More</a>
+</span>
+</div>
+ 
+  <div class="load-more-content"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/71.jpg"><img src="files/images/album/71.jpg" alt="71" title="71" style="width: 160px; height: 240px; margin-left: -80px; margin-top: -120px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">71</div></div>
+ 
+   <div class="load-more-content"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/71.jpg"><img src="files/images/album/71.jpg" alt="71" title="71" style="width: 160px; height: 240px; margin-left: -80px; margin-top: -120px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">71</div></div>
+ 
+ 
+   <div class="load-more-content"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/71.jpg"><img src="files/images/album/71.jpg" alt="71" title="71" style="width: 160px; height: 240px; margin-left: -80px; margin-top: -120px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">71</div></div>
+ 
+ 
+   <div class="load-more-content"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/71.jpg"><img src="files/images/album/71.jpg" alt="71" title="71" style="width: 160px; height: 240px; margin-left: -80px; margin-top: -120px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">71</div></div>
+ 
+ 
+   <div class="load-more-content"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/71.jpg"><img src="files/images/album/71.jpg" alt="71" title="71" style="width: 160px; height: 240px; margin-left: -80px; margin-top: -120px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">71</div></div>
+ 
+ 
+   <div class="load-more-content"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/71.jpg"><img src="files/images/album/71.jpg" alt="71" title="71" style="width: 160px; height: 240px; margin-left: -80px; margin-top: -120px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">71</div></div>
+ 
+</div>
+ 
+<a href="#" id="load-more-button">Load More...</a>
+
+
+
+</body>
+</html>

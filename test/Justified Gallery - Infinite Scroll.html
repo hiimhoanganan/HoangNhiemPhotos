@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Justified Gallery - Infinite Scroll</title>
+
+<script src="js/jquery.min.js"></script>
+	 
+<link rel="stylesheet" href="css/justifiedGallery.css" type="text/css" media="all">
+<script src="js/justifiedGallery.js"></script>
+  
+<script>
+colorboxConf = {
+maxWidth : '80%',
+maxHeight : '80%',
+opacity : 0.8,
+transition : 'elastic',
+current : ''
+};
+</script>
+	 
+	 
+	 
+	 
+	 
+	 
+<script type="text/javascript" src="highslide/highslide-with-gallery.packed.js"></script>
+<script type="text/javascript" src="highslide/highslide.config.js"></script>
+<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+	 
+	 
+ <style>
+ .load-more-content {
+  display: none;
+}
+#load-more-button {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: blue;
+  transition: .3s;
+}
+#load-more-button:hover {
+  color: blue;
+  background-color: #fff;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.end-load-more-content {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+ </style>
+ 
+ 
+ 
+ 
+<script>
+$(document).ready(function(){
+$(".load-more-content").slice(0, 2).show();
+$("#load-more-button").on("click", function(e){
+e.preventDefault();
+$(".load-more-content:hidden").slice(0, 2).slideDown();
+if($(".load-more-content:hidden").length == 0) {
+$("#load-more-button").text("End Content").addClass("end-load-more-content");
+}
+});
+
+})
+</script>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+</head>
+<body>
+
+<div id="Infinite-Gallery" class="justified-gallery">
+ 
+ <div class="load-more-content jg-entry entry-visible" style="width: 321px; height: 213.95px; top: 2267.25px; left: 1px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/47.jpg"><img src="files/images/album/47.jpg" alt="47" title="47" style="width: 321px; height: 214px; margin-left: -160.5px; margin-top: -107px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">47</div></div><div class="load-more-content jg-entry entry-visible" style="width: 321px; height: 213.95px; top: 2267.25px; left: 323px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/48.jpg"><img src="files/images/album/48.jpg" alt="48" title="48" style="width: 321px; height: 214px; margin-left: -160.5px; margin-top: -107px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">48</div></div><div class="load-more-content jg-entry entry-visible" style="width: 321px; height: 213.95px; top: 2267.25px; left: 645px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/49.jpg"><img src="files/images/album/49.jpg" alt="49" title="49" style="width: 321px; height: 214px; margin-left: -160.5px; margin-top: -107px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">49</div></div><div class="load-more-content jg-entry entry-visible" style="width: 359px; height: 213.95px; top: 2267.25px; left: 967px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/50.jpg"><img src="files/images/album/50.jpg" alt="50" title="50" style="width: 359px; height: 214px; margin-left: -179.5px; margin-top: -107px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">50</div></div><div class="load-more-content jg-entry entry-visible" style="width: 142px; height: 213.95px; top: 2267.25px; left: 1327px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/51.jpg"><img src="files/images/album/51.jpg" alt="51" title="51" style="width: 142px; height: 214px; margin-left: -71px; margin-top: -107px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">51</div></div><div class="load-more-content jg-entry entry-visible" style="width: 366px; height: 244.128px; top: 2482.2px; left: 1px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/52.jpg"><img src="files/images/album/52.jpg" alt="52" title="52" style="width: 366px; height: 245px; margin-left: -183px; margin-top: -122.5px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">52</div></div><div class="load-more-content jg-entry entry-visible" style="width: 366px; height: 244.128px; top: 2482.2px; left: 368px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/53.jpg"><img src="files/images/album/53.jpg" alt="53" title="53" style="width: 366px; height: 245px; margin-left: -183px; margin-top: -122.5px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">53</div></div><div class="load-more-content jg-entry entry-visible" style="width: 366px; height: 244.128px; top: 2482.2px; left: 735px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/54.jpg"><img src="files/images/album/54.jpg" alt="54" title="54" style="width: 366px; height: 245px; margin-left: -183px; margin-top: -122.5px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">54</div></div><div class="load-more-content jg-entry entry-visible" style="width: 367px; height: 244.128px; top: 2482.2px; left: 1102px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/55.jpg"><img src="files/images/album/55.jpg" alt="55" title="55" style="width: 367px; height: 245px; margin-left: -183.5px; margin-top: -122.5px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">55</div></div><div class="load-more-content jg-entry entry-visible" style="width: 338px; height: 229.557px; top: 2727.33px; left: 1px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/56.jpg"><img src="files/images/album/56.jpg" alt="56" title="56" style="width: 338px; height: 230px; margin-left: -169px; margin-top: -115px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">56</div></div><div class="load-more-content jg-entry entry-visible" style="width: 375px; height: 229.557px; top: 2727.33px; left: 340px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/57.jpg"><img src="files/images/album/57.jpg" alt="57" title="57" style="width: 375px; height: 230px; margin-left: -187.5px; margin-top: -115px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">57</div></div><div class="load-more-content jg-entry entry-visible" style="width: 408px; height: 229.557px; top: 2727.33px; left: 716px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/58.jpg"><img src="files/images/album/58.jpg" alt="58" title="58" style="width: 408px; height: 230px; margin-left: -204px; margin-top: -115px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">58</div></div><div class="load-more-content jg-entry entry-visible" style="width: 344px; height: 229.557px; top: 2727.33px; left: 1125px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/59.jpg"><img src="files/images/album/59.jpg" alt="59" title="59" style="width: 344px; height: 230px; margin-left: -172px; margin-top: -115px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">59</div></div><div class="load-more-content jg-entry entry-visible" style="width: 294px; height: 200.437px; top: 2957.89px; left: 1px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/60.jpg"><img src="files/images/album/60.jpg" alt="60" title="60" style="width: 294px; height: 201px; margin-left: -147px; margin-top: -100.5px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">60</div></div><div class="load-more-content jg-entry entry-visible" style="width: 301px; height: 200.437px; top: 2957.89px; left: 296px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/61.jpg"><img src="files/images/album/61.jpg" alt="61" title="61" style="width: 301px; height: 201px; margin-left: -150.5px; margin-top: -100.5px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">61</div></div><div class="load-more-content jg-entry entry-visible" style="width: 267px; height: 200.437px; top: 2957.89px; left: 598px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/62.jpg"><img src="files/images/album/62.jpg" alt="62" title="62" style="width: 267px; height: 201px; margin-left: -133.5px; margin-top: -100.5px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">62</div></div><div class="load-more-content jg-entry entry-visible" style="width: 301px; height: 200.437px; top: 2957.89px; left: 866px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/63.jpg"><img src="files/images/album/63.jpg" alt="63" title="63" style="width: 301px; height: 201px; margin-left: -150.5px; margin-top: -100.5px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">63</div></div>
+ 
+ <div class="load-more-content jg-entry entry-visible" style="width: 301px; height: 200.437px; top: 2957.89px; left: 1168px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/64.jpg"><img src="files/images/album/64.jpg" alt="64" title="64" style="width: 301px; height: 201px; margin-left: -150.5px; margin-top: -100.5px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">64</div></div>
+ 
+ <div class="load-more-content jg-entry entry-visible" style="width: 330px; height: 219.569px; top: 3159.32px; left: 1px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/65.jpg"><img src="files/images/album/65.jpg" alt="65" title="65" style="width: 330px; height: 220px; margin-left: -165px; margin-top: -110px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">65</div></div>
+ 
+ <div class="load-more-content jg-entry entry-visible" style="width: 329px; height: 219.569px; top: 3159.32px; left: 332px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/66.jpg"><img src="files/images/album/66.jpg" alt="66" title="66" style="width: 329px; height: 220px; margin-left: -164.5px; margin-top: -110px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">66</div></div>
+ 
+ <div class="load-more-content jg-entry entry-visible" style="width: 330px; height: 219.569px; top: 3159.32px; left: 662px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/67.jpg"><img src="files/images/album/67.jpg" alt="67" title="67" style="width: 330px; height: 220px; margin-left: -165px; margin-top: -110px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">67</div></div><div class="load-more-content jg-entry entry-visible" style="width: 330px; height: 219.569px; top: 3159.32px; left: 993px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/68.jpg"><img src="files/images/album/68.jpg" alt="68" title="68" style="width: 330px; height: 220px; margin-left: -165px; margin-top: -110px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">68</div></div><div class="load-more-content jg-entry entry-visible" style="width: 145px; height: 219.569px; top: 3159.32px; left: 1324px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/69.jpg"><img src="files/images/album/69.jpg" alt="69" title="69" style="width: 145px; height: 220px; margin-left: -72.5px; margin-top: -110px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">69</div></div><div class="load-more-content jg-entry entry-visible" style="width: 159px; height: 239.423px; top: 3379.89px; left: 1px;"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/70.jpg"><img src="files/images/album/70.jpg" alt="70" title="70" style="width: 159px; height: 240px; margin-left: -79.5px; margin-top: -120px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">70</div></div>
+ 
+ <div class="load-more-content"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/71.jpg"><img src="files/images/album/71.jpg" alt="71" title="71" style="width: 160px; height: 240px; margin-left: -80px; margin-top: -120px;"></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span><div class="caption">71</div></div>
+
+</div>
+ 
+<a href="#" id="load-more-button">Load More...</a>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<script>
+/*Infinite-Gallery*/
+$(window).scroll(function() {
+if($(window).scrollTop() + $(window).height() == $(document).height()) {
+for (i = 1; i <= 109; i++) {
+$('#Infinite-Gallery').append('<div class="load-more-content"><a class="highslide" onclick="return hs.expand(this, config1 )" href="files/images/album/'+i+'.jpg"><img src="files/images/album/'+i+'.jpg" alt="'+i+'" title="'+i+'"/></a><span class="highslide-heading">Heading</span><span class="highslide-caption">Caption <a href="./files/images/album/1.jpg" target="_blank">More</a></span></div>');
+}
+
+$('#Infinite-Gallery').justifiedGallery('norewind');
+}
+});
+
+$('#Infinite-Gallery').justifiedGallery({rowHeight:200});
+</script>
+
+</body></html>
