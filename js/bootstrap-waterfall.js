@@ -80,7 +80,7 @@ $(document)
         .toFixed(0) > 0 ? 'append' : 'prepend'](
         $('<div />', {
           class: 'pin',
-          html: '<a href="javascript:;"><img src="../../files/images/album/' +
+          html: '<a href="javascript:;"><img src="./files/images/album/' +
             i + (i < 109 ? '.jpg' : '.jpg') + 
             '" /></a>'
         })
