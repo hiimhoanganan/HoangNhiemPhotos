@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- =========================SITE TITLE============================== -->
-<title>Hoang Nhiem Photos</title>
+<title>Order History - Hoang Nhiem Photos</title>
 
 <!-- =========================FAV AND TOUCH ICONS============================== -->
 <link rel="icon" href="files/images/favicon.ico">
@@ -16,6 +16,53 @@
 <link rel="stylesheet" type="text/css" href="css/Style_HoangNhiemPhotos.css">
 <link rel="stylesheet" href="html5lightbox/icons/css/fontello.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/Horizontal-Scroller.css">
+
+<style>
+.profile_main h2 {
+font-weight: bold;
+}
+
+.MY_ACCOUNT a {
+padding: 15px 0 10px 0;
+color: black;
+text-decoration: none;
+display: block;
+}
+
+.MY_ACCOUNT a img {
+height: 15px;
+}
+.ACCOUNT_DETAILS ul {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+align-items: center;
+}
+.ACCOUNT_DETAILS ul li {
+width: 25%;
+}
+.ACCOUNT_DETAILS ul li p {
+margin: 20px 0px 23px -100px;
+background: #f1f1f1;
+padding: 41px 0px 41px 20px;
+}
+.ACCOUNT_DETAILS ul li a {
+color: #48D1CC;
+padding: 20px 0px 15px 0;
+display: block;
+font-weight: bold;
+cursor: pointer;
+}
+
+.ORDER-HISTORY img {
+width: 200px;
+height: 100px;
+margin: 10px 0;
+}
+
+background: #f2f2f2;
+</style>
+
 </head>
 <body>
 
@@ -154,14 +201,14 @@
 Account Details
 </a>
 
-<a href="Collections.html">
+<a href="collections.html">
 <img src="./files/images/icon/heart.png">
 Collections
 </a>
 
-<a href="Purshase-History.html">
+<a href="order-history.html">
 <img src="./files/images/icon/history.png">
-Purshase History
+Order History
 </a>
 
 <a href="#sign-out">
@@ -183,411 +230,47 @@ User: Hoang Nhiem
 <!-- /Navigation Bar -->
 
 
-
-
-
-
-
-<!-- BG Header -->
-<div class="bg-header">
-
-<div style="margin: 0 auto;"
-
-class="html5gallery"
-data-responsive="true"
-data-responsivefullscreen="true"
-data-html5player="true"
-data-autoslide="true" 
-data-skin="light" 
-data-showtitle="false"  
-data-showcarousel="false"  
-data-autoplayvideo="true" 
-data-defaultvideovolume="0.3"
-data-effect="fade" 
-data-resizemode="fill" 
-data-padding="0"
-data-slideshadow="false"
-data-thumbshowtitle="false"
-data-effect="fadeout"
-data-loop="0"
->
-
-<!-- Add images to Gallery -->
-<a href="./files/images/album/Vietnam/1.jpg"><img src="./files/images/album/Vietnam/1.jpg"></a>
-
-<a href="./files/images/album/Vietnam/2.jpg"><img src="./files/images/album/Vietnam/2.jpg"></a>
-
-<a href="./files/images/album/Vietnam/3.jpg"><img src="./files/images/album/Vietnam/3.jpg"></a>
-
-<a href="./files/images/album/Vietnam/4.jpg"><img src="./files/images/album/Vietnam/4.jpg"></a>
-
-<a href="./files/images/album/Vietnam/5.jpg"><img src="./files/images/album/Vietnam/5.jpg"></a>
-
-<!-- Add Youtube video to Gallery -->
-<!--<a href="https://www.youtube.com/watch?v=VeiKS7ak4-Y?rel=0&autoplay=1&mute=1"><img src="https://www.youtube.com/watch?v=VeiKS7ak4-Y/2.jpg" alt="Youtube Video"></a>-->
-
-</div>
-</div>
 </div>
 
 
 
 
 <!-- CONTAINER -->
-<div class="container">
-<div class="ABOUT">
-<div class="ABOUT-THE-PHOTOGRAPHER">
-<div>
-<h1>ABOUT</h1>
-<h1>THE PHOTOGRAPHER</h1>
+<div class="container" style="padding: 165px 0 0 0">
 
-<p>Hoang The Nhiem</p>
-<p>
-Born in 1960 in Ho Chi Minh City - Vietnam.<br>
-Lives and works in Ho Chi Minh City<br>
-Member of HOPA (HochiMinh Photography Association.)<br>
-VAPA (Vietnam Association of Photographic Artists.)<br>
-A.FIAP (Artist of the International Association of Photographic Arts)<br>
-<br>
-Hoang The Nhiem is an excellent photographer in the landscape photography category of Vietnam. He is a beautiful, unique photographer of Sapa after the generation of An Ninh martial arts. He has had many photo exhibitions both domestically and internationally such as USA, France, Belgium, England ...<br>
-Your photo has the natural beauty inherent in nature ......
-</p>
-<br>
-<a class="button" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</div>
-</div>
+<div class="profile_main" style="display: flex; justify-content: space-between;">
+<div class="MY_ACCOUNT" style="width: 33%">
+<h2>MY ACCOUNT</h2>
+<a href="profile.html">
+<img src="./files/images/icon/id-card.png">
+Account Details
+</a>
 
-<div class="IMG-ABOUT-THE-PHOTOGRAPHER">
-<img src="./files\images\album\avatar.jpg" alt="Hoang Nhiem Photos">
-</div>
-</div>
+<a href="collections.html">
+<img src="./files/images/icon/heart.png">
+Collections
+</a>
 
-<!-- NEW UPLOAD -->
-<div id="NEW-UPLOAD" class="NEW-UPLOAD">
-<h1 class="h1-border-bottom">NEW&nbsp; UPLOAD</h1>
-
-
-<div class="html5gallery" style="height: auto !important;"
-data-skin="light"
-data-responsive="true"
-data-html5player="true" 
-data-showcarousel="true" 
-data-thumbwidth="255" 
-data-thumbheight="370" 
-data-thumbgap="30"
-carouselbgtransparent="true"
-data-loop="0"
-data-autoslide="true" 
-
->
-<img src="./files\images\album\70.jpg" alt="Trees">
-<img src="./files\images\album\71.jpg" alt="Island">
-<img src="./files\images\album\72.jpg" alt="Opera House">
-<img src="./files\images\album\73.jpg" alt="Opera House">
-<img src="./files\images\album\74.jpg" alt="Trees">
-<img src="./files\images\album\75.jpg" alt="Island">
-<img src="./files\images\album\76.jpg" alt="Opera House">
-<img src="./files\images\album\77.jpg" alt="Opera House">
-<img src="./files\images\album\78.jpg" alt="Trees">
-<img src="./files\images\album\79.jpg" alt="Island">
-<img src="./files\images\album\80.jpg" alt="Opera House">
-<img src="./files\images\album\81.jpg" alt="Opera House">
-<img src="./files\images\album\82.jpg" alt="Trees">
-<img src="./files\images\album\83.jpg" alt="Island">
-<img src="./files\images\album\84.jpg" alt="Opera House">
-<img src="./files\images\album\85.jpg" alt="Opera House">
-</div>
-</div>
-
-<!-- GALLERY -->
-<div id="GALLERY" class="GALLERY">
-<h1 class="h1-border-bottom">GALLERY</h1>
-
-<!-- Photo Grid -->
-<div class="Photo-Grid-row"> 
-<div class="Photo-Grid-column1">
-<img src="./files\images\album\49.jpg" style="width:100%; height: 374px; object-fit: cover;">
-<div style="flex-flow: column wrap; display: flex; width: 50%;">
-<img src="./files\images\album\46.jpg" style="width: 100%;">
-<img src="./files\images\album\34.jpg" style="width: 100%;">
-</div>
-<img src="./files\images\album\56.jpg" style="width: 50%; height: 374px; object-fit: cover;">
-</div>
-
-<div class="Photo-Grid-column">
-<div class="Photo-Grid-column2">
-<img src="./files\images\album\45.jpg" style="width:100%">
-<img src="./files\images\album\55.jpg" style="width:100%">
-<img src="./files\images\album\67.jpg" style="width:100%">
-<img src="./files\images\album\75.jpg" style="width:100%">
-</div> 
-</div> 
-
-<div class="Photo-Grid-column1">
-<img src="./files\images\album\85.jpg" style="width: 50%; height: 374px; object-fit: cover;">
-<div style="flex-flow: column wrap;display: flex;width: 50%;">
-<img src="./files\images\album\84.jpg" style="width: 100%;">
-<img src="./files\images\album\78.jpg" style="width: 100%;">
-</div>
-
-<div class="Photo-Grid-column" style="max-width: 100% !important;">
-<img src="./files\images\album\66.jpg" style="width:100%">
-<img src="./files\images\album\53.jpg" style="width:100%">
-</div>
-</div>
-</div>
-</div>
-
-<!-- EXHIBITIONS -->
-<div class="EXHIBITIONS">
-
-<div class="IMG-EXHIBITIONS">
-<img src="./files\images\album\102.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<div class="EXHIBITIONS-CON">
-<h1>EXHIBITIONS</h1>
-
-<p>Photographer Hoang The Nhiem will have a new exhibition, promising to bring new impressions through his works in "Paris, first sightings" (photo) and "Vietnam, a tender childhood homeland".</p>
-
-<p>In order to capture the light and express the most delicate nuances, Hoang The Nhiem was very patient with the beauty, came back many times and performed hundreds of times his work.</p>
-
-<p>It takes a lot of patience and skill to convey the pure and sensitive first look of the artist.</p>
-<br>
-<a class="button" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="ARTICLE">
-<h1 class="h1-border-bottom">ARTICLE</h1>
-<!-- Horizontal Scroller -->
-<div class="hs__wrapper">
-<ul class="hs">
-
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\47.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<h3>Photographer Hoang The Nhiem - Sapa</h3>
-<a style="color: darkgray">21 December, 2015</a>
-<br>
-<p>Photography artist Hoang The Nhiem He is photography artist Hoang The Pa ”as someone said jokingly. Since 1995 ...</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
+<a href="order-history.html">
+<img src="./files/images/icon/history.png">
+Order History
 </a>
 </div>
-</li>
 
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\100.jpg" alt="Hoang Nhiem Photos">
-</div>
+<div class="ACCOUNT_DETAILS" style="width: 66%; display: flex; flex-flow: column wrap;">
+<h2>ORDER HISTORY</h2>
 
-<h3>Hoang The Nhiem and art of selling photos</h3>
-<a style="color: darkgray">6 March, 2010</a>
-<br>
-<p>TP - What do buyers get with hundreds of dollars of photographs sold by Hoang The Nhiem...</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</a>
-</div>
-</li>
-
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\105.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<h3>"King of landscape” drunken clouds of sapa</h3>
-<a style="color: darkgray">8 April, 2011</a>
-<br>
-<p>LCDT - It is artist Hoang The Nhiem, one of the famous photographers living in the city.</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</a>
-</div>
-</li>
-
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\40.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<h3>Most famous street photographers for inspiration</h3>
-<a style="color: darkgray">21 December, 2015</a>
-<br>
-<p>Photography artist Hoang The Nhiem He is photography artist Hoang The Pa ”as someone said jokingly. Since 1995 ...</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</a>
-</div>
-</li>
-
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\39.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<h3>Photographer Hoang The Nhiem - Sapa</h3>
-<a style="color: darkgray">21 December, 2015</a>
-<br>
-<p>Photography artist Hoang The Nhiem He is photography artist Hoang The Pa ”as someone said jokingly. Since 1995 ...</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</a>
-</div>
-</li>
-
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\25.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<h3>Photographer Hoang The Nhiem - Sapa</h3>
-<a style="color: darkgray">21 December, 2015</a>
-<br>
-<p>Photography artist Hoang The Nhiem He is photography artist Hoang The Pa ”as someone said jokingly. Since 1995 ...</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</a>
-</div>
-</li>
-
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\33.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<h3>Photographer Hoang The Nhiem - Sapa</h3>
-<a style="color: darkgray">21 December, 2015</a>
-<br>
-<p>Photography artist Hoang The Nhiem He is photography artist Hoang The Pa ”as someone said jokingly. Since 1995 ...</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</a>
-</div>
-</li>
-
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\54.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<h3>Photographer Hoang The Nhiem - Sapa</h3>
-<a style="color: darkgray">21 December, 2015</a>
-<br>
-<p>Photography artist Hoang The Nhiem He is photography artist Hoang The Pa ”as someone said jokingly. Since 1995 ...</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</a>
-</div>
-</li>
-
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\64.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<h3>Photographer Hoang The Nhiem - Sapa</h3>
-<a style="color: darkgray">21 December, 2015</a>
-<br>
-<p>Photography artist Hoang The Nhiem He is photography artist Hoang The Pa ”as someone said jokingly. Since 1995 ...</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</a>
-</div>
-</li>
-
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\84.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<h3>Photographer Hoang The Nhiem - Sapa</h3>
-<a style="color: darkgray">21 December, 2015</a>
-<br>
-<p>Photography artist Hoang The Nhiem He is photography artist Hoang The Pa ”as someone said jokingly. Since 1995 ...</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</a>
-</div>
-</li>
-
-<!-- HS Items -->
-<li class="hs__item"> 
-<div class="hs__item__content__wrapper">
-<a href="index.html">
-<div class="HS-IMG">
-<img src="./files\images\album\38.jpg" alt="Hoang Nhiem Photos">
-</div>
-
-<h3>Photographer Hoang The Nhiem - Sapa</h3>
-<a style="color: darkgray">21 December, 2015</a>
-<br>
-<p>Photography artist Hoang The Nhiem He is photography artist Hoang The Pa ”as someone said jokingly. Since 1995 ...</p>
-<br>
-<a class="button-night" href="index.html" alt="Hoang Nhiem Photos">VIEW MORE...</a>
-</a>
-</div>
-</li>
-
-<!-- HS Prev Button Control -->
-<div class="arrows hs_arrow-prev">
-<a class="arrow disabled arrow-prev"></a>
-</div>
-<!-- HS Next Button Control -->
-<div class="arrows hs_arrow-next">
-<a class="arrow arrow-next"></a>
-</div>
-
+<div class="ORDER-HISTORY">
+<ul>
+<li><img src="./files/images/album/1.jpg"><img src="./files/images/album/49.jpg"><img src="./files/images/album/50.jpg"><img src="./files/images/album/83.jpg"><img src="./files/images/album/100.jpg"></li>
+<li style="text-align: center;"><p>MeKong river</p><p>Cuu Long river</p><p>Hai Van Pass</p><p>Khau Pha Pass</p><p>Ha Long beach</p></li>
+<li style="text-align: center;"><p>Print</p> <p>Digital</p> <p>Digital</p> <p>Digital</p> <p>Print</p></li>
+<li style="text-align: center;"><p>1 Mar 2019</p> <p>3 Mar 2018</p> <p>5 May 2017</p> <p>7 June 2016</p> <p>9 July 2015</p></li>
 </ul>
 </div>
+
 </div>
-
-
-
-
-
+</div>
 </div>
 
 

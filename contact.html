@@ -15,96 +15,33 @@
 <!-- =========================CSS============================== -->
 <link rel="stylesheet" type="text/css" href="css/Style_HoangNhiemPhotos.css">
 <link rel="stylesheet" type="text/css" href="css/Horizontal-Scroller.css">
-<link rel="stylesheet" type="text/css" href="css/The-Modal.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 <style>
-.Checkout_row {
-display: -ms-flexbox; /* IE10 */
-display: flex;
--ms-flex-wrap: wrap; /* IE10 */
-flex-wrap: wrap;
-margin: 0 -16px;
-}
-
-.Checkout_col-25 {
--ms-flex: 25%; /* IE10 */
-flex: 25%;
-}
-
-.Checkout_col-50 {
--ms-flex: 50%; /* IE10 */
-flex: 50%;
-}
-
-.Checkout_col-75 {
--ms-flex: 75%; /* IE10 */
-flex: 75%;
-}
-
-.Checkout_col-25,
-.Checkout_col-50,
-.Checkout_col-75 {
-padding: 0 16px;
-}
-
-.Checkout_container {
-background-color: #f2f2f2;
-padding: 5px 20px 15px 20px;
-border: 1px solid lightgrey;
-border-radius: 3px;
-}
-
-input[type=text] {
+input[type=text], select, textarea {
 width: 100%;
-margin-bottom: 20px;
 padding: 12px;
 border: 1px solid #ccc;
-border-radius: 3px;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
 }
 
-label {
-margin-bottom: 10px;
-display: block;
-}
-
-.Checkout_icon-container {
-margin-bottom: 20px;
-padding: 7px 0;
-font-size: 24px;
-}
-
-.Checkout_btn {
-background-color: #1e1e1e;
-color: white;
-padding: 12px;
-margin: 10px 0;
+input[type=submit] {
+background-color: white;
+color: black;
+padding: 12px 20px;
 border: none;
-width: 100%;
-border-radius: 3px;
+border-radius: 4px;
 cursor: pointer;
-font-size: 17px;
+border: 1px solid black;
+font-weight: bolder;
 }
 
-.Checkout_btn:hover {
-background-color: #4e4e4e;
-}
-
-
-span.price {
-float: right;
-color: grey;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-.Checkout_row {
-flex-direction: column-reverse;
-}
-.Checkout_col-25 {
-margin-bottom: 20px;
-}
+input[type=submit]:hover {
+background-color: black;
+color: white;
+font-weight: bolder;
 }
 </style>
 
@@ -280,100 +217,28 @@ User: Hoang Nhiem
 
 <!-- CONTAINER -->
 <div class="container">
-<h2 style="font-weight: bold; padding: 100px 0 30px 0;">CHECKOUT</h2>
-<div class="Checkout_row">
-<div class="Checkout_col-75">
-<div class="Checkout_container">
+<h2 style="font-weight: bold; padding: 100px 0 30px 0;">CONTACT US</h2>
+<div style="background-color: #f2f2f2;padding: 30px;border: 1px solid lightgrey;border-radius: 3px;">
 <form action="/action_page.php">
+<label for="fname">Your Name</label>
+<input type="text" id="fname" name="firstname" placeholder="Enter your name..">
 
-<div class="Checkout_row">
-<div class="Checkout_col-50">
-<h3>Billing Address</h3>
-<label for="fname"><i class="fa fa-user"></i> Full Name</label>
-<input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-<label for="email"><i class="fa fa-envelope"></i> Email</label>
-<input type="text" id="email" name="email" placeholder="john@example.com">
-<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-<input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-<label for="city"><i class="fa fa-institution"></i> City</label>
-<input type="text" id="city" name="city" placeholder="New York">
+<label for="lname">Email</label>
+<input type="text" id="lname" name="lastname" placeholder="Enter email or your phone..">
 
-<div class="Checkout_row">
-<div class="Checkout_col-50">
-<label for="state">State</label>
-<input type="text" id="state" name="state" placeholder="NY">
-</div>
-<div class="Checkout_col-50">
-<label for="zip">Zip</label>
-<input type="text" id="zip" name="zip" placeholder="10001">
-</div>
-</div>
-</div>
+<label for="country">Country</label>
+<select id="country" name="country">
+<option value="VN">Vietnam</option>
+<option value="canada">Canada</option>
+<option value="usa">USA</option>
+</select>
 
-<div class="Checkout_col-50">
-<h3>Payment</h3>
-<label style="margin-bottom:5px;" for="fname">Accepted Cards</label>
-<div class="icon-container" style="font-size: 41px; padding: 0px 0 17px 0;">
-<i class="fa fa-cc-paypal" style="color:black;"></i>
-<i class="fa fa-cc-mastercard" style="color:black;"></i>
-<i class="fa fa-cc-visa" style="color:black;"></i>
-</div>
-<label for="cname">Name on Card</label>
-<input type="text" id="cname" name="cardname" placeholder="John More Doe">
-<label for="ccnum">Credit card number</label>
-<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-<label for="expmonth">Exp Month</label>
-<input type="text" id="expmonth" name="expmonth" placeholder="September">
-<div class="Checkout_row">
-<div class="Checkout_col-50">
-<label for="expyear">Exp Year</label>
-<input type="text" id="expyear" name="expyear" placeholder="2018">
-</div>
-<div class="Checkout_col-50">
-<label for="cvv">CVV</label>
-<input type="text" id="cvv" name="cvv" placeholder="352">
-</div>
-</div>
-</div>
+<label for="subject">Subject</label>
+<textarea id="subject" name="subject" placeholder="Write something for me.." style="height:200px"></textarea>
 
-</div>
-<label>
-<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-</label>
+<input type="submit" value="Send">
 </form>
-<button id="myBtn" class="Checkout_btn">Continue to checkout</button>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-<!-- Modal content -->
-<div class="modal-content">
-<span class="close">&times;</span>
-<div style="text-align: center;">
-<i class="fa fa-check-circle-o fa-4x" aria-hidden="true" style="color: green;"></i>
-<h2>ORDER CONFIRMATION</h2>
-<p>Order #02511 has been placed successfully and an invoice has been emailled to the customer</p>
-<a href="order-history.html">Order history</a>
-<a href="index.html">Back to homepage</a>
-<a href="GALLERY.html">Continue shopping</a>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="Checkout_col-25">
-<div>
-<h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
-<p><a href="mekong-river.html"><img style="width: 50%;" src="./files/images/album/1.jpg"></a><span class="price"><br><br><br>$60</span></p>
-<p><a href="mekong-river.html"><img style="width: 50%;" src="./files/images/album/2.jpg"></a><span class="price"><br><br><br>$100</span></p>
-<hr>
-<p>Total <span class="price" style="color:black"><b>$160</b></span></p>
-</div>
-</div>
-</div>
-
-
-
-
-
 </div>
 
 
@@ -470,7 +335,6 @@ User: Hoang Nhiem
 <!--==============================JS==============================-->
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/Horizontal-Scroller.js"></script>
-<script type="text/javascript" src="js/The-Modal.js"></script>
 
 </body>
 </html>
